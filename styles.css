@@ -1,0 +1,157 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+	font-size: clamp(40%, 1% + 2vw, 62.5%);
+
+  --hue: 240;
+  --text-color-primary: hsla(var(--hue), 0%, 100%, 1);
+  --text-color-secondary: hsla(var(--hue), 7%, 78%, 1);
+  --text-color-terciary: hsla(var(--hue), 9%, 89%, 1);
+  --text-color-space: hsla(var(--hue), 97%, 31%, 1);
+
+  --fontsize-title: 4.8rem;
+  --fontsize-title-mobile: 3.6rem;
+  --fontsize-title2: 2.4rem;
+  --fontsize-common: 1.8rem;
+  --fontsize-common2: 1.4rem;
+  
+  --fontweight-title: 700;
+  --fontweight-common: 400;
+}
+
+:body {
+	font-size: 1.6rem;
+}
+
+body {
+  position: relative;
+
+  color: var(--text-color-primary);
+  font-family: 'Roboto', sans-serif;
+}
+
+p {
+  font-size: var(--fontsize-common);
+  line-height: 160%;
+}
+
+h1, h2 {
+  font-size: var(--fontsize-title-mobile);
+  font-weight: var(--fontweight-title);
+}
+
+button {
+  display: inline-flex;
+  padding: 1.2rem 3.2rem;
+  justify-content: center;
+  background: transparent;
+  outline: none;
+  border: 2px solid var(--text-color-primary);
+  border-radius: 5px;
+
+  color: var(--text-color-primary);
+  text-align: center;
+  font-family: Roboto;
+  font-weight: var(--fontweight-title);
+
+  transition: 0.2s ease-in-out;
+}
+
+button:hover {
+  background: var(--text-color-primary);
+  color: var(--text-color-space);
+
+  cursor: pointer;
+}
+
+header {
+  position: absolute;
+  top: 4rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+header img {
+  width: 4.9rem;
+  height: 4.2rem;
+  margin-right: 2rem;
+}
+
+header a {
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 21.667px;
+  margin-right: 2rem;
+  text-decoration: none;
+  box-shadow: none;
+  color: var(--text-color-secondary);
+
+  transition: 0.2s ease-in-out;
+}
+
+header a:hover {
+  color: var(--text-color-primary);
+}
+
+main {
+  widht: 100%;
+  height: 100vh;
+  
+  display: flex;
+
+  background-image: url("./assets/mountains-universe-1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  color: var(--text-color-terciary);
+}
+
+
+.card {
+  margin: -10rem 2rem 5rem;
+  max-width: 64.8rem;
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1.6rem;
+}
+
+.card.home {
+  width: 100%;
+  max-width: 100%;
+  align-items: center;
+  gap: 2.4rem;
+}
+
+@media (min-width: 780px) {
+  header {
+    top: 4rem; 
+    justify-content: flex-start;
+    margin-left: 7rem;
+  }
+  
+  header img {
+    margin-right: 4.3rem;
+  }
+  
+  header a {
+    margin-right: 5.3rem;
+  }
+
+  h1, h2 {
+    font-size: var(--fontsize-title);
+  }
+
+  .card {
+    margin: -5rem 10rem 5rem;
+  }
+}
