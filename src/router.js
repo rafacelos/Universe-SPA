@@ -24,5 +24,20 @@ export class Router {
     .then(html => {
       document.querySelector('#content').innerHTML = html
     })
+
+    this.backgroundImg()
+  }
+
+  backgroundImg() {
+    if (window.location.pathname == '/') {
+      document.querySelector("main").style.backgroundImage = "url(./assets/bg1.png)"
+    } 
+    if ( window.location.pathname == '/universe' ) {
+      document.querySelector("main").style.backgroundImage = "url(./assets/bg2.png)"
+    }
+    if ( window.location.pathname == '/explorer' ) {
+      document.querySelector("main").style.backgroundImage = "url(./assets/bg3.png)"
+    }
+
   }
 }
