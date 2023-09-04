@@ -1,6 +1,5 @@
 ﻿<h1 align="center"> Universe-SPA </h1>
 
-<p align="center"> Deploy Link - https://rafacelos.github.io/Universe-SPA/</p>
 
 <p align="center">
   Webpage about the Universe, build with the concept "Single Page Application".
@@ -12,10 +11,18 @@
   <a href="#-layout">Layout</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#memo-license">License</a>
 </p>
-
 <p align="center">
   <img alt="License" src="https://img.shields.io/static/v1?label=license&message=MIT&color=49AA26&labelColor=000000">
 </p>
+
+<p align="center"> How to run the project:
+</p>
+<ol>
+  <li>Download ZIP on my repo: https://github.com/rafacelos/Universe-SPA;</li>
+  <li>Open in VScode (Download VScode if need);</li>
+  <li>Install Node on your machine;</li>
+  <li>Run lite-server on the project, through the terminal in VScode, with the command: npm start.</li>
+</ol>
 
 <br>
 
