@@ -45,7 +45,7 @@ This project was developed with the following technologies:
 
 ## 💻 Project
 
- The project is a interactive single page application. It can travel through content, using routes with javascript. This was a great exercise to practice how to build routes, classes and modelus, in javascript. 
+ The project is a interactive single page application. It can travel through content, using routes with javascript. This was a great exercise to practice how to build routes, classes and modules, in javascript. 
 
 ## :memo: License
 
